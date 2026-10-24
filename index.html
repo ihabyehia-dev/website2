@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>amir yehia</title>
+</head>
+<body>
+    <h1>Amir Yehia</h1>
+    <hr color="black">
+    <p>Amir Yehia is a dedicated HYROX athlete who has built a strong reputation across the global functional fitness racing circuit. Competing in both the Pro and Open divisions, he has completed 17 HYROX races across three seasons, earning five podium finishes along the way. Known for his endurance and speed, Yehia achieved a career highlight at HYROX Toronto 2026, winning the 25–29 age group with an overall time of 1:04:04 and securing an impressive sub-1-hour Doubles PR of 57:58.</p>
+ 
+    <img src="Screenshot 2026-10-24 195113.png" height="238" alt="pic of amir yehia">
+    <img src="Screenshot 2026-10-24 195140.png" alt="pic of amir yehia">
+
+    <br>
+    <a href="https://www.hyresult.com/athlete/amir-yehia" target="_blank">click here to view amir's stats!!</a>
+
+    <p>From competing in major events across cities like New York, Berlin, and Toronto, Amir Yehia continues to establish himself as a standout competitor in the HYROX community. His versatility across individual Pro events and Doubles races showcases both his relentless work ethic and strategic approach to multi-discipline functional fitness. As he continues to rack up podium finishes and push his personal bests, Yehia remains an athlete to watch on the international HYROX circuit.</p>
+    <br>
+    
+    <div class="trainer-box">
+        <h3>Do you want to train with amir?</h3>
+
+        <input type="radio" id="yes" name="choice"> yes
+        <input type="radio" id="no" name="choice"> no
+        <button id="submit">submit</button>
+        <br><br>
+        <input type="text" id="int" size="30">
+    </div>
+   
+    <h1>SEE YOU SOON!!!</h1>
+
+    <script>
+    let want = confirm("Do you want to enter the website?");
+    
+    if (want) {
+        let sub = document.getElementById("submit");
+        let output = document.getElementById("int"); 
+        let okBox = document.getElementById("yes");
+        let noBox = document.getElementById("no");
+
+        sub.addEventListener("click", function() {
+            if (okBox.checked) {
+                output.value = "Soon you will be in touch with amir!!";
+            } else if (noBox.checked) {
+                output.value = "no problem";
+            } else {
+                output.value = "select your answer!";
+            }
+        });
+    } else {
+        document.body.innerHTML = "<h1 style='text-align: center; color: red;'>Access Denied</h1>";
+    }
+    </script>
+</body>
+</html>
